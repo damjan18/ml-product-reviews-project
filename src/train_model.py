@@ -30,7 +30,7 @@ preprocessor = ColumnTransformer(
 
 pipeline = Pipeline([
       ("preprocessing", preprocessor),
-      ("classifier", RandomForestClassifier)
+      ("classifier", RandomForestClassifier())
   ])
 
 pipeline.fit(x, y)
